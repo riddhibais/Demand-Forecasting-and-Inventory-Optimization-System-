@@ -21,10 +21,25 @@ st.markdown("""
         background-color: #0071CE;
         padding: 25px;
         border-radius: 10px;
-        color: white !important;
         text-align: center;
         margin-bottom: 25px;
         box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+    
+    /* Specific styles to force header text to Yellow, bypassing global rules */
+    .walmart-header h1 {
+        color: #FFC220 !important;
+        margin: 0;
+        font-size: 2.2rem;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+    .walmart-header p {
+        color: #FFC220 !important;
+        margin: 5px 0 0 0;
+        font-size: 1rem;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
     }
     
     /* Clean White Cards for Metrics and Results */
@@ -47,9 +62,9 @@ st.markdown("""
         margin-top: 20px;
     }
     
-    /* Global Text Fixes for Visibility */
+    /* Global Text Fixes for Visibility (Targets everything outside the header) */
     h1, h2, h3, h4, h5, h6, p, label, .stMarkdown {
-        color: #041E42 !important; /* Walmart Corporate Navy */
+        color: #041E42;
         font-family: 'Helvetica Neue', Arial, sans-serif;
     }
     
@@ -65,13 +80,11 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# 3. App Banner (White text inside clean Blue header)
+# 3. App Banner (Yellow text inside classic Blue header)
 st.markdown("""
     <div class="walmart-header">
-        <h1 style='color: white !important; margin: 0; font-size: 2.2rem;'>Walmart Supply Chain Control Center</h1>
-        <p style='color: #FFC220 !important; margin: 5px 0 0 0; font-size: 1rem; font-weight: bold; letter-spacing: 0.5px;'>
-            INVENTORY REPLENISHMENT & DEMAND FORECASTING SYSTEM
-        </p>
+        <h1>Walmart Supply Chain Control Center</h1>
+        <p>INVENTORY REPLENISHMENT & DEMAND FORECASTING SYSTEM</p>
     </div>
 """, unsafe_allow_html=True)
 
