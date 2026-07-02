@@ -42,6 +42,8 @@ Open your terminal (Command Prompt/PowerShell on Windows, Terminal on macOS/Linu
 git clone (riddhibais
 Demand-Forecasting-and-Inventory-Optimization-System-)
 cd YOUR_REPOSITORY_NAME
+
+
 2. Configure an Isolated Environment
 Setting up a Python virtual environment prevents library version conflicts across your global operating system.
 
